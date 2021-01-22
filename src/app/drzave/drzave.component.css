@@ -1,0 +1,68 @@
+th {
+    color: rgba(27, 27, 27, 0.801);
+    width: 20%;
+}
+
+
+
+button {
+    
+    font-weight: 500;
+    font-size: 13px;
+    
+}
+
+.filter-button{
+    margin: 0px 20px 20px;
+    width: 20%;
+}
+
+.pretraga-button {
+    color: rgba(27, 27, 27, 0.801);
+    background: none;
+    border: none;
+   outline: none;
+   box-shadow: none;
+
+}
+
+.pretraga-div{
+    margin-bottom: 30px; 
+    float: right;
+
+}
+
+@media screen and (max-width: 768px){
+    button {
+        font-weight: 500;
+        font-size: 13px;
+        width: 100%;
+        margin: 5px;
+    }
+
+
+
+.pretraga-div{
+    margin-bottom: 30px; 
+    float: none;
+    text-align: center;
+    
+}
+
+
+    .drzave-input {
+        
+        display: block;
+        width: 100%;
+        margin: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .table-striped{
+font-size: x-small;
+
+    }
+
+}

@@ -1,0 +1,45 @@
+div {
+    margin: auto;
+    width: 50%;
+    border: 3px solid #383d41;
+    padding: 20px;
+    text-align: center;
+}
+h1{
+
+    color: #383d41 ;
+}
+
+li{
+    text-align: left;
+}
+
+.podsjetnik { 
+    margin: auto;
+    width: 50%;
+    border: none;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 20px 7px;
+    width: 30%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    button {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 10px 20px 7px;
+        width: 50%;
+    }
+
+    input {
+        width: 50%;
+    }
+}

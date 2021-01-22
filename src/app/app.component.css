@@ -1,0 +1,47 @@
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #343a40;
+  }
+  
+  li {
+    float: left;
+    padding-left: 55px;
+    font-weight: 500;
+
+  }
+  
+  @media screen and (max-width: 1020px) {
+  li {
+    float: left;
+    padding-left: 40px;
+    font-weight: 500;
+    font-size: 15px;
+
+  }
+}
+
+@media screen and (max-width: 920px) {
+    li {
+      float: left;
+      padding-left: 12px;
+      font-weight: 500;
+      font-size: 15px;
+  
+    }
+  }
+
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  

@@ -1,0 +1,34 @@
+<div class="container">
+
+  <div style="text-align: center;">
+    <button class="btn btn-dark" (click)="SveTransakcije()">Sve transakcije</button>
+
+    <button *ngFor="let kategorija of kategorije" class="btn btn-dark" (click)="Filter(kategorija)">
+      {{ kategorija }} </button>
+
+    </div>
+
+
+    <p style="clear: left;">Ukupna vrijednost: {{ ukupno | currency: ' ': ' ' }} KM</p>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Datum</th>
+          <th>Detalji transakcije</th>
+          <th>Kategorija transakcije</th>
+          <th>Iznos transakcije</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let transakcija of transakcijeZaDisplay">
+          <td>{{ transakcija.datum | date:'dd.MM.yyyy HH:mm' }}</td>
+          <td>{{ transakcija.detaljiTransakcije }}</td>
+          <td>{{ transakcija.kategorija }}</td>
+          <td>{{ transakcija.iznos | currency: ' ': ' ' }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button mat-raised-button (click)="novaTransakcija()"  >Nova transakcija</button>
+  </div>

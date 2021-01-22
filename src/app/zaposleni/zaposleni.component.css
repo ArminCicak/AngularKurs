@@ -1,0 +1,82 @@
+
+button {
+    
+    font-weight: 500;
+    font-size: 13px;
+    
+}
+
+.filter-button{
+    margin: 0px 20px 20px;
+    width: 20%;
+}
+
+.pretraga-button {
+    color: rgba(27, 27, 27, 0.801);
+    background: none;
+    border: none;
+   outline: none;
+   box-shadow: none;
+
+}
+
+.pretraga-div{
+    margin-bottom: 30px; 
+    float: right;
+
+}
+
+.filter-div{
+    clear: right;
+    display: block;
+   
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    button {
+        float: left;
+        display: block;
+        font-weight: 500;
+        width: 100%;
+        font-size: 13px;
+        
+       
+    }
+
+    .filter-button{
+        
+        width: 100% !important;
+        display: block;
+        margin: 0px 0px 20px;
+      
+    }
+    
+.pretraga-div{
+    margin-bottom: 30px; 
+    float: none;
+    text-align: center;
+    
+}
+
+.filter-div{
+    clear: right;
+    display: block;
+   
+    text-align: center;
+}
+
+}
+
+th {
+    color: rgba(27, 27, 27, 0.801);
+    width: 25%;
+}
+
+@media only screen and (max-width: 600px){
+    .table-striped{
+font-size: small;
+
+    }
+
+}

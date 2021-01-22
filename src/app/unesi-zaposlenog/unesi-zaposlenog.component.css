@@ -1,0 +1,19 @@
+mat-form-field.mat-form-field {
+  margin-left: 15px;
+  color: rgb(0, 0, 0) !important;
+
+}
+
+.submit-button {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(39, 39, 39) !important;
+margin-left: 30px;
+}
+
+.form-class{
+  color: blue !important;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+

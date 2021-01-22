@@ -1,0 +1,38 @@
+<div class="container">
+
+  
+  <div class="pretraga-div">
+      
+   <input class="drzave-input" type="text" (keyup)="onKey($event)" [(ngModel)]="terminZaPretragu" />
+  <button class="btn btn-default btn-xs pretraga-button" (click)="Pretrazi()">Pretraži</button>
+  <button class="btn btn-default btn-xs pretraga-button" (click)="SveDrzave()">Poništi pretragu</button>
+  
+  
+  
+</div>
+
+
+  <p style="clear: right; float: right;">Ukupna populacija: {{ ukupno | currency: ' ': ' ' }} osoba</p>
+      
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Ime države</th>
+          <th>Glavni grad</th>
+          <th>Jezici</th>
+          <th>Populacija</th>
+          <th>Zastava</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let drzave of drzaveZaDisplay">
+          <td> {{ drzave.name }} </td>
+          <td> {{ drzave.capital }} </td>
+          <td> <p *ngFor="let jezik of drzave.languages">{{ jezik.name}}</p> </td>
+          <td> {{ drzave.population | currency: ' ': ' ' }} </td>
+          <td> <img src="{{ drzave.flag }}" height="50px"> </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
