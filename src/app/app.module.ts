@@ -16,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { UnesiZaposlenogComponent } from './unesi-zaposlenog/unesi-zaposlenog.component';
 import { NovaTransakcijaComponent } from './nova-transakcija/nova-transakcija.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
