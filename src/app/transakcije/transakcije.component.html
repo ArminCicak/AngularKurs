@@ -11,6 +11,8 @@
 
     <p style="clear: left;">Ukupna vrijednost: {{ ukupno | currency: ' ': ' ' }} KM</p>
 
+    <button mat-raised-button (click)="novaTransakcija()"  >Nova transakcija</button>
+
     <table class="table table-striped">
       <thead>
         <tr>
@@ -30,5 +32,5 @@
       </tbody>
     </table>
 
-    <button mat-raised-button (click)="novaTransakcija()"  >Nova transakcija</button>
+
   </div>
